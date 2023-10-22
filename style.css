@@ -1,4 +1,4 @@
-{
+*{
     margin:0;
     padding: 0;
     list-style: none;
@@ -6,11 +6,20 @@
 
 }
 
+.header1 {
+    width: 100%;
+    height: 12px;
+    display: block;
+    background-color:#250841;
+
+
+}
 .header{
         width: 100%;
-        height: 100px;
+        height: 80px;
         display: block;
-        background-color:#0dc29b;
+        background-color:#bbddd6;
+        line-height: 3;
 }
 
 .inner_header{
@@ -19,16 +28,27 @@
     height: 100%;
     display: block;
     margin: 0 auto;
+
 }
 
-.logo_container{
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+    
+
+}
+
+.logo_container h1{
     color: white;
     height: 100%;
     display: table-cell;
+    vertical-align: middle;
     font-family:'Arial';
-    font-size: 32 px # can specify font sizze of each word
+    font-size: 32 px; # can specify font size of each word
 
 }
+
 
 .navigation{
     float: right;
@@ -37,7 +57,19 @@
 .navigation a{
     height: 100%; # to acess a tag in navigation, same for all type like logo.container
     display: table;
-    float: 1px;
-    padding:0px
+    float: left;
+    padding:0px 20px;
+
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    color: white;
+    font-family: 'Arial';
+    font-size: 16px;
+
+
 }
 
