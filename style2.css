@@ -58,6 +58,7 @@
         position: absolute;
         left: 700px;
         top:0px;
+        border-radius: 90px;
         height: 20%;
     }
     #plans{
