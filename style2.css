@@ -47,20 +47,53 @@
     margin-top: 100px;
     font-family:  verdana, sans-serif;
     }
+    /* .container{
+        position: relative;
+        display: inline-block;
+    } */
     #bar{
     position:absolute;
     top: 0px;
     left:0px;
     width: 100%;
     height: 30%;
+    /* background-color: rgb(0,0,0) */
     }
     #logo{
         position: absolute;
+        /* text-align: center;  */
         left: 700px;
         top:0px;
         border-radius: 90px;
         height: 20%;
+        
+            /* display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%; */
+          
     }
+
+/* 
+    .container{
+        position: relative;
+        display: inline-block;
+    }
+    .background {
+        display: block;
+        width: 2%;
+        height: auto;
+      }
+       */
+      /* .centered {
+        position: absolute;
+        top: 0%; 
+        left: 100%; 
+        transform: translate(0%, 0%); 
+        z-index: 1; 
+        border-radius:200px;
+      } 
+             */
     #plans{
         position:absolute;
         top: 130px;
