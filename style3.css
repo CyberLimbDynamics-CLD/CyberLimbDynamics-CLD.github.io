@@ -157,14 +157,29 @@
     padding-top: 500px;
    }
 
-   .positioned-image {
+   .full-screen-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 50px;
+   }
+   .full-screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+   .header{
     position: absolute;
-    top: 250px;
+    top: 1%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
    }
 
    .rounded-box {
+    position: absolute;
     background-color: #555753;
     border: 1px #555753;
     color: black;
