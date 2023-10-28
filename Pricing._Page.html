@@ -1,8 +1,173 @@
 <!DOCTYPE html>
 <html> 
     <body> 
-        <h1> Plans & Pricing </h1>
+        <h1> <strong> Plans & Pricing </strong> </h1>
         <h2> Advanced Patient Scanner & Prosthetics for hospitals</h2>
+        
+    <div class="pricing-container"> 
+        <div class="pricing-switch"> 
+            <p class = "fieldset"
+                <input type = "radio" name = "billing-duration" value = "monthly" id="monthly1" checked> <!--checked meaning option chosen by default-->
+                <label for="monthly1" >Monthly </label>
+                <input type="radio" name = "billing-duration" value = "yearly" id = "yearly1" >
+                <label for="yearly1" > Yearly </label>
+                <span class = "switch" ></span> <!--# represents the switch between monthly and yearly-->
+            </p>
+        </div>
+        <ul class="pricing-list bounce-invert">
+			<li>
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="pricing-header">
+							<h2>Basic</h2>
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="value">30</span>
+								<span class="duration">mo</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>5</em> ...</li>
+								<li><em>1</em> ...</li>
+								<li><em>25</em> ...</li>
+								<li><em>1</em> ....</li>
+								<li><em>....</em> ...</li>
+								<li><em>24/7</em> ....</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Sign Up</a>
+						</footer>
+					</li>
+					<li data-type="yearly" class="is-hidden">
+						<header class="pricing-header">
+							<h2>Basic</h2>
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="value">320</span>
+								<span class="duration">yr</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>.</em> ...</li>
+								<li><em>.</em> ...</li>
+								<li><em>.</em> ...</li>
+								<li><em>.</em> ....</li>
+								<li><em>..</em> ...</li>
+								<li><em>...</em> ..</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Sign Up</a>
+						</footer>
+					</li>
+				</ul>
+			</li>
+			<li class="exclusive">
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="pricing-header">
+							<h2>Exclusive</h2>
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="value">60</span>
+								<span class="duration">mo</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>.</em> ...</li>
+								<li><em>.</em> ...s</li>
+								<li><em>.</em> ...</li>
+								<li><em>..</em> ...t</li>
+								<li><em>..</em> .</li>
+								<li><em>..</em> .</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Sign Up</a>
+						</footer>
+					</li>
+					<li data-type="yearly" class="is-hidden">
+						<header class="pricing-header">
+							<h2>Exclusive</h2>
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="value">630</span>
+								<span class="duration">yr</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>..</em> ...</li>
+								<li><em>.</em> ...</li>
+								<li><em>..</em> ...</li>
+								<li><em>.</em> ..</li>
+								<li><em>..</em> .</li>
+								<li><em>.</em> .</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Sign Up</a>
+						</footer>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<ul class="pricing-wrapper">
+					<li data-type="monthly" class="is-visible">
+						<header class="pricing-header">
+							<h2>Pro</h2>
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="value">90</span>
+								<span class="duration">mo</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>20</em> Email Accounts</li>
+								<li><em>5</em> Template Styles</li>
+								<li><em>50</em> Products Loaded</li>
+								<li><em>10</em> Images per Product</li>
+								<li><em>Unlimited</em> Bandwidth</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Sign Up</a>
+						</footer>
+					</li>
+					<li data-type="yearly" class="is-hidden">
+						<header class="pricing-header">
+							<h2>Pro</h2>
+							<div class="price">
+								<span class="currency">$</span>
+								<span class="value">950</span>
+								<span class="duration">yr</span>
+							</div>
+						</header>
+						<div class="pricing-body">
+							<ul class="pricing-features">
+								<li><em>20</em> Email Accounts</li>
+								<li><em>5</em> Template Styles</li>
+								<li><em>50</em> Products Loaded</li>
+								<li><em>10</em> Images per Product</li>
+								<li><em>Unlimited</em> Bandwidth</li>
+								<li><em>24/7</em> Support</li>
+							</ul>
+						</div>
+						<footer class="pricing-footer">
+							<a class="select" href="#">Sign Up</a>
+						</footer>
+					</li>
+				</ul>
+			</li>
+		</ul>
+    </div>
+
         <h3> Standard: $5,000 - $10,000 per month or $40,000 - $60,0000 one-time purchase </h3>
         <h4> Advanced: </h4>
         <h5> Entreprise: </h5>
