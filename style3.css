@@ -150,13 +150,16 @@
     }
 
    .content {
-    position: relative;
-    padding-top: 300px;
+    padding-top: 50px;
+   }
+
+   .additional-content {
+    padding-top: 500px;
    }
 
    .positioned-image {
     position: absolute;
-    top: 450px;
+    top: 250px;
     left: 50%;
     transform: translate(-50%);
    }
