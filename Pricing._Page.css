@@ -62,7 +62,7 @@ body {
 	font-size: 1.6rem;
 	font-family: "Arial", sans-serif;
 	color: #2d3d4f;
-	background-color: #1bbc9d;
+	background-color: #617470;
 }
 
 a {
@@ -119,7 +119,7 @@ a {
 	left: 2px;
 	height: 40px;
 	width: 90px;
-	background-color: #2d3e50;
+	background-color: #f0eaea;
 	border-radius: 50em;
 	-webkit-transition: -webkit-transform 0.5s;
 	-moz-transition: -moz-transform 0.5s;
@@ -538,21 +538,21 @@ a {
 }
 
 .no-touch .select:hover {
-    background-color: #1bbc9d;
+    background-color: #b6bbba;
 	color: #ffffff;
 }
 
 .exclusive .select {
-    background-color: #1bbc9d;
+    background-color: #b6bbba;
 	color: #ffffff;
 }
   
 .no-touch .exclusive .select:hover {
-    background-color: #24e0ba;
+    background-color: #b6bbba;
 }
   
 .secondary-theme .exclusive .select {
-    background-color: #1bbc9d;
+    background-color: #b6bbba;
 }
   
 .no-touch .secondary-theme .exclusive .select:hover {
