@@ -1,0 +1,151 @@
+
+.tab-buttons{
+    background-color: rgb(177,176,176);
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-right:30px;
+
+}
+.tab-buttons2{
+    background-color: rgb(177,176,176);
+    border: none;
+    height: 36px;
+    width: 125px;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-right:30px;
+
+}
+.links{
+    color: rgb(255, 255, 255);
+
+}
+
+
+
+    .CLD{
+        text-align: center;
+        font-size: 2em;
+        
+    }
+    p{
+        font-size: 20px;
+    }
+    
+   
+    .center{
+	    color: #555753; 
+    }
+    h3{
+        font-size: 2em;
+    }
+    h1{
+	text-align: center;
+    margin-top: 100px;
+    font-family:  verdana, sans-serif;
+    }
+    /* .container{
+        position: relative;
+        display: inline-block;
+    } */
+    #bar{
+    position:absolute;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 30%;
+    /* background-color: rgb(0,0,0) */
+    }
+    #logo{
+        position: absolute;
+        /* text-align: center;  */
+        left: 700px;
+        top:0px;
+        border-radius: 90px;
+        height: 20%;
+        
+            /* display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%; */
+          
+    }
+
+/* 
+    .container{
+        position: relative;
+        display: inline-block;
+    }
+    .background {
+        display: block;
+        width: 2%;
+        height: auto;
+      }
+       */
+      /* .centered {
+        position: absolute;
+        top: 0%; 
+        left: 100%; 
+        transform: translate(0%, 0%); 
+        z-index: 1; 
+        border-radius:200px;
+      } 
+             */
+    #plans{
+        position:absolute;
+        top: 130px;
+        font-size: 30px;
+        left: 725px;
+        color:#D4CDCD;
+    }
+    #features{
+        position:absolute;
+        top: 130px;
+        font-size: 30px;
+        left: 600px;
+        color:#D4CDCD;
+    }
+    #team{
+        position:absolute;
+        top: 130px;
+        font-size: 30px;
+        left: 950px;
+        color:#D4CDCD;
+    }
+    #about{
+        position:absolute;
+        top: 130px;
+        font-size: 30px;
+        left: 500px;
+        color:#D4CDCD;  
+    }
+    #drop{
+        position:absolute;
+        top: 2%;
+        left: 95%;  
+    }
+    /*.header-links{
+        text-align:center;
+        text-decoration: none;
+        color:#D4CDCD;
+
+        
+    } */
+    .header-links {
+        text-align: center;
+        color: rgb(255,255,255)
+    }
+    
+    .header-links a {
+        text-decoration: underline;
+        color: #D4CDCD;
+        /* Add any other styles you want for the tabs here*/
+    }
+    .tab-links{
+        text-align:center;
+        text-decoration: none;
+        color:#D4CDCD;
+    }
