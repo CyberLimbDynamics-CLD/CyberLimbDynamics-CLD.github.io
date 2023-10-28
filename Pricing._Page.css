@@ -15,7 +15,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	font: Arial;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -60,7 +60,7 @@ html * {
 
 body {
 	font-size: 1.6rem;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Arial", sans-serif;
 	color: #2d3d4f;
 	background-color: #1bbc9d;
 }
@@ -83,11 +83,11 @@ a {
     max-width: none;
 }
 
-.pricing-switcher {
+.pricing-switch {
 	text-align: center;
 }
 
-.pricing-switcher .fieldset {
+.pricing-switch .fieldset {
 	display: inline-block;
 	position: relative;
 	padding: 2px;
@@ -95,12 +95,12 @@ a {
 	border: 2px solid #2d3e50;
 }
 
-.pricing-switcher input[type="radio"] {
+.pricing-switch input[type="radio"] {
 	position: absolute;
 	opacity: 0;
 }
 
-.pricing-switcher label {
+.pricing-switch label {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
@@ -113,7 +113,7 @@ a {
 	color: #ffffff;
 }
 
-.pricing-switcher .switch {
+.pricing-switch .switch {
 	position: absolute;
 	top: 2px;
 	left: 2px;
@@ -126,8 +126,8 @@ a {
 	transition: transform 0.5s;
 }
 
-.pricing-switcher input[type="radio"]:checked + label + .switch,
-.pricing-switcher input[type="radio"]:checked + label:nth-of-type(n) + .switch {
+.pricing-switch input[type="radio"]:checked + label + .switch,
+.pricing-switch input[type="radio"]:checked + label:nth-of-type(n) + .switch {
 	-webkit-transform: translateX(90px);
 	-moz-transform: translateX(90px);
 	-ms-transform: translateX(90px);
@@ -135,7 +135,7 @@ a {
 	transform: translateX(90px);
 }
 
-.no-js .pricing-switcher {
+.no-js .pricing-switch {
 	display: none;
 }
 
