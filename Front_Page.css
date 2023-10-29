@@ -113,7 +113,7 @@ h1 {
 
 .image-text {
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -123,8 +123,8 @@ h1 {
 
 .header{
     position: absolute;
-    top: 0%;
-    left: 50%;
+    top: 10%;
+    left: 60%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
@@ -132,8 +132,8 @@ h1 {
 
 .rounded-box {
     position: absolute;
-    top: 45%;
-    left: 42.5%;
+    top: 60%;
+    left: 0%;
     background-color: #555753;
     border: 1px solid #555753;
     color: black;
@@ -160,74 +160,67 @@ h1 {
     object-fit: cover;
 }
 
-.affordable {
+.left {
+    float: left;
+}
+
+.Style1 {
     position: relative;
-    width: 100%;
-    height: 75vh;
-    opacity: 0.5;
+
     object-fit: cover;
 }
+
 
 .text {
     position: absolute;
     left: 0;
     top: 0;
+    font-size: medium;
+    color: white;
 }
 
-.titanium-image-style {
-    position: relative;
-    width: 100%;
-    height: 75vh;
-    opacity: 0.5;
-    object-fit: cover;
-}
-
-.text1 {
+.text_black {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 10px;
+    right: 15px;
+    color: black;
 }
 
-.revolutionize {
-    position: relative;
-    width: 100%;
-    height: 75vh;
-    opacity: 0.5;
-    object-fit: cover;
-}
 
 .text2 {
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    text-align: center;
+    color: black;
 }
 
-.Limb-Scanning {
-    position: relative;
-    width: 100%;
-    height: 75vh;
-    opacity: 0.5;
-    object-fit: cover;
-}
-
-.text3 {
+.bottom-left {
     position: absolute;
-    left: 0;
-    top: 0;
+    bottom: 10px;
+    left: 15px;
 }
 
-.Your-Journey-Begins-Here {
-    position: relative;
-    width: 100%;
-    height: 75vh;
-    opacity: 0.5;
-    object-fit: cover;
-}
-
-.text4 {
+.top-left{
     position: absolute;
-    left: 0;
-    top: 0;
+    top: 10px;
+    right: 15px;
+    color: black;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+
+#Picture1 {
+    width: 100%;
+    height: 600px;
+    text-align: left;
+}
 
