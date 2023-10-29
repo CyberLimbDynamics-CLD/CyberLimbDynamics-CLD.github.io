@@ -1,0 +1,6 @@
+
+Color Theme: We aimed to decorate our website in a futuristic 
+and modern style. Hence, we've chosen a color scheme comprising 
+black, grey, and white tones, accented with vibrant colors to 
+impart a futuristic feel.
+
