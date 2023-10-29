@@ -4,6 +4,8 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="./Features_style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="Feature.js"></script>
     <title></title>
 </head>
 
@@ -62,10 +64,33 @@
                         <li class = "bullet">Advance sensors to provide real-time data feedback to improve responsiveness</li>
                         <li class="bullet">Another one</li>
                     </ul>
-                    <div class="Choose-Button1">
-                        <button>
-                            <h3>CHOOSE</h3>
-                        </button>
+                    <!--<div class="Choose-Button1">-->
+                        <button class="button1">
+                            <h3>CHOOSE</h3></button>
+                            <!--This is what will be inlcuded inside the popup-->
+                            <a href="#0" onclick="show('popup')" class="cd-popup-trigger"></a>
+                            <div class="cd-popup"  role='alert' id="popup">
+                                <h2>Preferences</h2>
+                                <ul>
+                                    <li class="square_bullet">Option #1</li>
+                                    <li class="square_bullet">Option #2</li>
+                                    <li class="square_bullet">Option #3</li>  
+                                </ul>
+                                <h2>Efficient</h2>
+                                <ul>
+                                    <li class="square_bullet">Option #1</li>
+                                    <li class="square_bullet">Option #2</li>
+                                    <li class="square_bullet">Option #3</li>  
+                                </ul>
+                                <h2>Pain Tolorence</h2>
+                                <ul>
+                                    <li class="square_bullet">Option #1</li>
+                                    <li class="square_bullet">Option #2</li>
+                                    <li class="square_bullet">Option #3</li>  
+                                </ul>
+                                <div class="pop_background"></div>
+                                <a href="#0" class="cd-popup-close img-replace" onclick="hide('popup')"><img src="./Images/X image.png"></a>
+                            </div>
                     </div>
             </div>
                 
@@ -81,10 +106,9 @@
                     <li class="bullet">SubFeature2</li>
                     <li class="bullet">SubFeature3</li>
                 </ul>
-                <div class="Choose-Button2">
-                    <button>
-                        <h3>CHOOSE</h3>
-                    </button>
+                <!--<div class="Choose-Button2">-->
+                    <button class="button2" href="#" onclick="show('popup')">
+                        <h3>CHOOSE</h3></button>
                 </div>
             </div>
 
@@ -96,15 +120,15 @@
             sensory stimulation. Helping our patients receive instant feedback </h2>
                 </h1>
                 <ul>
-                    <li class="bullet">SubFeature1</li>
-                    <li class="bullet">SubFeature2</li>
+                    <li class="bullet">The is myself testing wether I have the ability to change</li>
+                    <li class="bullet">This is another test as to whey the button is not good</li>
                     <li class="bullet">SubFeature3</li>
 
                 </ul>
-                <div class="Choose-Button3">
-                    <button>
-                        <h3>CHOOSE</h3>
-                    </button>
+                <!--<div class="Choose-Button3">-->
+                    <button class="button3" href="#" onclick="show('popup')">
+                        <h3>CHOOSE</h3></button>
+                        
                 </div>
 
             </div>

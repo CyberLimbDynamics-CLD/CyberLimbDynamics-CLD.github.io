@@ -190,24 +190,24 @@
 
 .middle_panel {
 	width: 20%;
-	height: 65%;
+	height: 318px;
 	border-style: solid;
     float: left;
     border-width: 0;
     padding: 10px;
     box-shadow: 5px 5px 5px grey;
-    transform: translate(225px,50px);
+    transform: translate(500px,-395px);
 }
 
 .right_panel {
 	width: 20%;
-	height: 65%;
+	height: 322px;
 	float: right;
 	border-style: solid;
     border-width: 0;
     padding: 10px;
     box-shadow: 5px 5px 5px grey;
-    transform: translate(-40px,50px);
+    transform: translate(-40px,-400px);
 }
 
 .bullet{
@@ -231,7 +231,7 @@
     font-family: Rambla, sans-serif;
 }
 
-.Choose-Button2 button{
+.button2{
     border: 2px solid black;
     background-color: white;
     color: black;
@@ -239,22 +239,22 @@
     cursor: pointer;
     border-color: black;
     align-items: center;
-    transform: translate(45%,100px);
+    transform: translate(40%,110px);
     
 
 }
 
-.Choose-Button2 h3{
+.button2 h3{
     font-size: 16px;
 }
 
-.Choose-Button2 button:hover{
+.button2:hover{
     box-shadow: 5px 5px 5px gray;
     
 
 }
 
-.Choose-Button1 button{
+.button1{
     border: 2px solid black;
     background-color: white;
     color: black;
@@ -262,22 +262,81 @@
     cursor: pointer;
     border-color: black;
     align-items: center;
-    transform: translate(45%,30px);
+    transform: translate(40%,30px);
     
 
 }
 
-.Choose-Button1 h3{
+.button1 h3{
     font-size: 16px;
 }
 
-.Choose-Button1 button:hover{
+.button1:hover{
     box-shadow: 5px 5px 5px gray;
-    
 
 }
 
-.Choose-Button3 button{
+.cd-popup{
+    display: none;
+    position: fixed;
+    padding: 10px;
+    width: 280px;
+    left: 50%;
+    margin-left: -150px;
+    height: 180px;
+    top: 50%;
+    margin-top: -100px;
+    background: #FFF;
+    border: 3px solid #F04A49;
+    z-index: 20;
+    transform: translate(300px,50px);
+}
+
+#cd-popup:after{
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+  }
+  
+#cd-popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    z-index: -1;
+  }
+
+.pop-background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; //whatever you want
+    opacity: 0;
+    transition: all 0.5 linear;
+    -webkit-transition: same!;
+    -moz-transition: same!;
+    -o-transition: same!
+}
+.pop-background.visible {
+    opacity: 1;
+}
+/*This should be your pop-up container, this needs to have higher z-index in order to be obove background*/
+
+.cd-popup1 {
+  z-index: 9999;
+}
+
+.button3{
     border: 2px solid black;
     background-color: white;
     color: black;
@@ -285,16 +344,16 @@
     cursor: pointer;
     border-color: black;
     align-items: center;
-    transform: translate(45%,90px);
+    transform: translate(40%,70px);
     
 
 }
 
-.Choose-Button3 h3{
+.button3 h3{
     font-size: 16px;
 }
 
-.Choose-Button3 button:hover{
+.button3:hover{
     box-shadow: 5px 5px 5px gray;
     
 
