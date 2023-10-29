@@ -69,10 +69,11 @@
     }
     #logo{
         position: absolute;
-        left: 0px;
+        left: 93%;
         top:0px;
         height: 7%;
     }
+    
     #plans{
         position:absolute;
         top: 0px;
@@ -101,11 +102,7 @@
         left: 470px;
         color:#D4CDCD;  
     }
-    #drop{
-        position:absolute;
-        top: 2%;
-        left: 95%;  
-    }
+    
     .header-links{
         text-decoration: none;
         color:#D4CDCD;
@@ -268,13 +265,73 @@
         top:-220px;
         width:100px
     }
-    
+    #hr1{
+        width:20px;
+        
+    }
+    #hr2{
+        width:20px; 
+    }
+    /* Dropdown Button */
+.dropbtn {
+  background-color: #363636;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+ height:48px;
+ 
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+/* Dropdown Content  */
+.dropdown-content {
+    display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu */
+.show {display:block;}
     </Style>
+	    
     <body>
-        <!-- background-color:#D4CDCD; -->
+        
         <img id="bar" src="About_Page_Images/Rectangle 4.png">
         <a href="Front_PageVersion2.html"> <img id="logo" src="About_Page_Images/CLD-logo.png"> </a> 
-        <img id="drop" src="About_Page_Images/down.png">
+         <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" ><hr id="hr1"><hr id="hr2"></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="Front._Page.html">Welcome to CLD-CyberLimbDyamics</a>
+              <a href="Feature.Page.html">Our Features</a>
+              <a href="Pricing._Page.html">Our Plans and Pricing</a>
+              <a href="About._Page.html">About CLD-CyberLimbDyamics</a>
+              <a href="Team._Page.html">Meet the Team</a>
+            </div>
         <h1>CyberLimbDynamics-CLD</h1>
         <div id="The-beauty-of-cld">
         <h2 class="CLD">The Beauty of CLD</h2>
@@ -366,5 +423,27 @@
         <p id="features"> <a class="header-links" href="Feature.Page.html">Features</a></p>
         <p id="team"> <a class="header-links" href="Team._Page.html">Our team</a> </p>
         <p id="about">About</p>
+
+	    <script>
+             /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        </script>
     </body>
 </html>
