@@ -56,13 +56,12 @@
 
 
 } 
-
-
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
   width: 180px;
+  
 }
 
 div.gallery:hover {
@@ -72,6 +71,7 @@ div.gallery:hover {
 div.gallery img {
   width: 100%;
   height: auto;
+  border-radius: 170px;
 }
 
 div.desc {
@@ -79,17 +79,80 @@ div.desc {
   text-align: center;
 }
 
-.content h1 {
-    text-align: center;
-    margin: auto;
-  }
-  
-.content   h2 {
-    text-align: left;
-  }
-  
-.content   h3 {
-    text-align: right;
-  }
-  
+* {box-sizing: border-box;}
 
+.container {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 700px;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+
+.image-container {
+    text-align: center;
+}
+/* 
+.image-container div {
+    display: inline-block;
+    margin: 20px;
+}
+
+.image-container div:nth-child(-n+3) {
+
+    display: inline-block;
+}
+
+
+.image-container div:nth-child(n+4) {
+
+    display: block;
+} */
+
+
+h1{
+    text-align: center;
+}
+
+    div {
+        text-align: center;
+    }
+
+
+    p{
+        text-align: center;
+    }
