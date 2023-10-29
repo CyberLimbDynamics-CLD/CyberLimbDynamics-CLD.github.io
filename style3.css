@@ -53,7 +53,7 @@
     #bar{
     position:absolute;
     top: 0px;
-    left:0px;
+    left: 0px;
     width: 100%;
     height: 30%;
     /* background-color: rgb(0,0,0) */
@@ -61,7 +61,7 @@
     #logo{
         position: absolute;
         /* text-align: center;  */
-        left: 700px;
+        left: 760px;
         top:0px;
         border-radius: 90px;
         height: 20%;
@@ -97,28 +97,28 @@
         position:absolute;
         top: 130px;
         font-size: 30px;
-        left: 725px;
+        left: 775px;
         color:#D4CDCD;
     }
     #features{
         position:absolute;
         top: 130px;
         font-size: 30px;
-        left: 600px;
+        left: 655px;
         color:#D4CDCD;
     }
     #team{
         position:absolute;
         top: 130px;
         font-size: 30px;
-        left: 950px;
+        left: 1000px;
         color:#D4CDCD;
     }
     #about{
         position:absolute;
         top: 130px;
         font-size: 30px;
-        left: 500px;
+        left: 560px;
         color:#D4CDCD;  
     }
     #drop{
@@ -150,19 +150,22 @@
     }
 
    .content {
-    padding-top: 50px;
+    padding-top: 100vh;
    }
 
    .additional-content {
-    padding-top: 500px;
+    padding-top: 50px;
    }
 
    .full-screen-image {
     position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     overflow: hidden;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
    }
    .full-screen-image img {
     width: 100%;
@@ -171,7 +174,7 @@
    }
    .header{
     position: absolute;
-    top: 1%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -180,8 +183,10 @@
 
    .rounded-box {
     position: absolute;
+    top: 45%;
+    left: 42.5%;
     background-color: #555753;
-    border: 1px #555753;
+    border: 1px solid #555753;
     color: black;
     border-radius: 10px;
     padding: 10px 20px;
@@ -189,4 +194,30 @@
     text-align: center;
     width: 200px;
     font-weight: bold;
+   }
+
+   body{
+    margin: 0;
+    padding: 0;
+   }
+
+   .text-and-image-container {
+    display: flex;
+   }
+
+   .text {
+    flex: 1;
+    padding: 20px;
+   }
+
+   .image {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+   }
+
+   .image img {
+    max-width: 60%;
+    max-height: 20%;
+    text-align: center;
    }
