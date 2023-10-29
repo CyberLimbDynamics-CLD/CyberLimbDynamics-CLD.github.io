@@ -1,4 +1,4 @@
-jQuery(document).ready(function($){
+jQuery(Pricing._Page.html).ready(function($){
 	//hide the subtle gradient layer (.pricing-list > li::after) when pricing table has been scrolled to the end (mobile version only)
 	checkScrolling($('.pricing-body'));
 	$(window).on('resize', function(){
@@ -28,7 +28,7 @@ jQuery(document).ready(function($){
 	function bouncy_filter(container) {
 		container.each(function(){
 			var pricing_table = $(this);
-			var filter_list_container = pricing_table.children('.pricing-switcher'),
+			var filter_list_container = pricing_table.children('.pricing-switch'),
 				filter_radios = filter_list_container.find('input[type="radio"]'),
 				pricing_table_wrapper = pricing_table.find('.pricing-wrapper');
 
