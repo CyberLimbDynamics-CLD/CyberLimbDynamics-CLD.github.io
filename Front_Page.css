@@ -136,19 +136,6 @@ h1 {
     font-weight: bold;
 }
 
-.text-and-image-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.text-and-image-container hr {
-    border: none;
-    border-top: 1px solid #777;
-    margin: 20px 0;
-}
-
 .text h2 {
     font-size: 2em;
 }
@@ -164,5 +151,49 @@ h1 {
     object-fit: cover;
 }
 
+.affordable {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.affordable::before {
+    content: "";
+    background-image: url(Front_Page_Images/Futuristic_Prosthetics.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    z-index: -1;
+}
+.affordable img {
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+.affordable .text {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 20px;
+}
+
+.affordable .text h2 {
+    font-size: 2em;
+}
+
+.affordable .text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
 
 
