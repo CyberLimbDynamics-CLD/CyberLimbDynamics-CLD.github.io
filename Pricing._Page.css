@@ -15,7 +15,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: Arial;
+	font: Rambla;
 	vertical-align: baseline;
 }
 *{
@@ -85,7 +85,7 @@ time, mark, audio, video {
   text-align: center;
   height: 100%;
   color: white;
-  font-family: 'Arial';
+  font-family: 'Rambla';
   font-size: 16px;
   transform: translate(-350px,0px);
 
@@ -93,48 +93,15 @@ time, mark, audio, video {
 }
 
 /*Our Solution CSS*/
-.Why-header{
-  width: 100%;
-  height: 350px;
-  display: block;
-  background-color:#f0eaea;
-  background-image: linear-gradient(white,#808080);
-  line-height: 1;
 
-}
-.Why_Our_Product {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.Why_Our_Product h1{
-  font-family: "Montserrat";
-  font-size: 30px;
-  transform: translate(5px,50px);
-  padding-top: 10px;
-  padding-bottom: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
 
-}
-
-.Why_Our_Product p{
-  font-family: "Montserrat";
-  font-size: 15px;
-  transform: translate(5px,100px);
-  padding-top: 0px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  text-align: center;
 
 }
 
 
 .Acquire-Button{
-  background-color: #808080;
+  background-color: #555753;
   color:#fff;
   padding: 10px 20px;
   border-radius: 50px;
@@ -215,8 +182,8 @@ html * {
 body {
 	font-size: 1.6rem;
 	font-family: "Arial", sans-serif;
-	color: #2d3d4f;
-	background-color: #617470;
+	color: #000000;
+	background-color: #555753;
 }
 
 a {
@@ -242,11 +209,12 @@ a {
 }
 
 .pricing-switch .fieldset {
+  /*its outline border*/
 	display: inline-block;
 	position: relative;
 	padding: 2px;
 	border-radius: 50em;
-	border: 2px solid #2d3e50;
+	border: 2px solid #000000;
 }
 
 .pricing-switch input[type="radio"] {
@@ -264,16 +232,17 @@ a {
 	line-height: 40px;
 	cursor: pointer;
 	font-size: 1.4rem;
-	color: #ffffff;
+	color: #e8e8e8;
 }
 
 .pricing-switch .switch {
+  /*circle thing on the option chosen (monthly or once)*/
 	position: absolute;
 	top: 2px;
 	left: 2px;
 	height: 40px;
 	width: 90px;
-	background-color: #f0eaea;
+	background-color: #686565;
 	border-radius: 50em;
 	-webkit-transition: -webkit-transform 0.5s;
 	-moz-transition: -moz-transform 0.5s;
@@ -519,7 +488,7 @@ a {
 }
 
 .exclusive .pricing-header {
-    color: #1bbc9d;
+    color: #000000;
     background-color: transparent;
 }
 
@@ -680,7 +649,7 @@ a {
     display: inline-block;
     height: auto;
     padding: 1.3em 2em;
-    color: #1bbc9d;
+    color: #000000;
     border-radius: 8px;
     border: 2px solid #1bbc9d;
     font-size: 1.4rem;
@@ -710,7 +679,7 @@ a {
 }
   
 .no-touch .secondary-theme .exclusive .select:hover {
-    background-color: #112e3c;
+    background-color: #052332;
 }
   
 .has-margins .select {
