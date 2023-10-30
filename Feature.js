@@ -38,7 +38,7 @@ form.addEventListener("submit", (e) => {
     let emailValue = form.email.value;
     let isEmpty = (nameValue || phoneValue || emailValue) === '';
     
-	if (!isEmpty) {
+   if (!isEmpty) {
         validateName(nameValue);
         validatePhone(phoneValue);
         validdateMail(emailValue);
@@ -55,40 +55,33 @@ form.addEventListener("submit", (e) => {
 
 //name validator
 function validateName(name) {
+    console.log(name)
     if (/^[a-zA-Z\-]+$/.test(name)) {
-        displayError("#name_error", "none");
-        return true;
+        error[0].style.display = "none";
     } else {
-        displayError("#name_error", "block");
-        return false;
+        error[0].style.display = "block";
+        error[0].textContent = "Only letter without space.";
     }
 }
 
 //phone number validator
 function validatePhone(phone) {
     if (/^\d{10}$/.test(phone)) {
-        displayError("#phone_error", "none");
-        return true;
+        error[1].style.display = "none";
     } else {
 
-        displayError("#phone_error", "block");
-        return false;
+        error[1].style.display = "block";
+        error[1].textContent = "Contains 10 digit number";
     }
 }
 
 //email  validator
 function validdateMail(mail) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
-        displayError("#email_error", "none");
-        return true;
+        error[2].style.display = "none";
     } else {
 
-        displayError("#email_error", "block");
-        return false;
+        error[2].style.display = "block";
+        error[2].textContent = "Invaid Email";
     }
-}
-
-
-function displayError(elementId, elementProperty) {
-    return form.querySelector(elementId).style.display = elementProperty;
 }
