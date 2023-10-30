@@ -101,9 +101,9 @@ div.desc {
   bottom: 0; 
   background: rgb(255, 255, 255);
   background: rgba(0, 0, 0, 0.5); 
-  color: #f1f1f1; 
+  color: rgb(241,241,241); 
   width: 100%;
-  transition: .5s ease;
+  transition: 1s ease;
   opacity:0;
   color: white;
   font-size: 20px;
@@ -144,9 +144,9 @@ div.desc {
 } */
 
 
-h1{
+ /* h1{
     text-align: center;
-}
+} */
 
     div {
         text-align: center;
@@ -155,4 +155,4 @@ h1{
 
     p{
         text-align: center;
-    }
+    } 
