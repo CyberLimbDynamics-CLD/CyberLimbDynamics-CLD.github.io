@@ -91,13 +91,14 @@
 
 .Why_Our_Product h1{
     font-family: "Montserrat";
-    font-size: 30px;
+    font-size: 20px;
     transform: translate(5px,50px);
     padding-top: 10px;
     padding-bottom: 0px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
+    font-family: sans-serif;
 
 }
 
@@ -110,6 +111,8 @@
     padding-left: 5px;
     padding-right: 5px;
     text-align: center;
+    font-family: 'Quicksand';
+    font-stretch: condensed;
 
 }
 
@@ -168,7 +171,7 @@
 .container{
     align-content: center;
     background-color: w;
-    height: 70vh;
+    height: 30vh;
     width: 100%;
 }
 
@@ -179,13 +182,13 @@
 
 .left_panel {
 	width: 20%;
-	height: 65%;
+	height: 320px;
 	float: left;
 	border-style: solid;
     border-width: 0;
     padding:10px;
     box-shadow: 5px 5px 5px grey;
-    transform: translate(20px,50px);
+    transform: translate(20px,45px);
 }
 
 .middle_panel {
@@ -196,7 +199,7 @@
     border-width: 0;
     padding: 10px;
     box-shadow: 5px 5px 5px grey;
-    transform: translate(500px,-395px);
+    transform: translate(225px,-120px);
 }
 
 .right_panel {
@@ -207,7 +210,7 @@
     border-width: 0;
     padding: 10px;
     box-shadow: 5px 5px 5px grey;
-    transform: translate(-40px,-400px);
+    transform: translate(-40px,-125px);
 }
 
 .bullet{
@@ -215,8 +218,6 @@
     color: black;
 
 }
-
-
 
 .Features h1{
     font-size: 20px;
@@ -239,7 +240,7 @@
     cursor: pointer;
     border-color: black;
     align-items: center;
-    transform: translate(40%,110px);
+    transform: translate(40%,60px);
     
 
 }
@@ -262,7 +263,7 @@
     cursor: pointer;
     border-color: black;
     align-items: center;
-    transform: translate(40%,30px);
+    transform: translate(40%,80px);
     
 
 }
@@ -276,11 +277,13 @@
 
 }
 
-.cd-popup{
+/* Wasn't able to get the greyed out background for at the momment. 
+    I have commented it out for now because it is not ready, but still left it to show what I was trying to do. 
+.popup{
     display: none;
     position: fixed;
     padding: 10px;
-    width: 280px;
+    width: 300px;
     left: 50%;
     margin-left: -150px;
     height: 180px;
@@ -289,10 +292,10 @@
     background: #FFF;
     border: 3px solid #F04A49;
     z-index: 20;
-    transform: translate(300px,50px);
+    transform: translate(300px,300px);
 }
 
-#cd-popup:after{
+#popup:after{
     position: fixed;
     content: "";
     top: 0;
@@ -303,7 +306,7 @@
     z-index: -2;
   }
   
-#cd-popup:before {
+#popup:before {
     position: absolute;
     content: "";
     top: 0;
@@ -313,7 +316,39 @@
     background: #FFF;
     z-index: -1;
   }
+.square_bullet1{
+    list-style-type: square;
+    transform: translate(20px,30px);
+    
+}
 
+.Pref{
+    transform: translate(10px,30px);
+}
+
+.square_bullet2{
+    list-style-type: square;
+    transform: translate(120px,-56px);
+}
+
+.Eff{
+    transform: translate(120px,-56px);
+}
+
+.square_bullet3{
+    list-style-type: square;
+    transform: translate(210px,-142px);
+}
+.Pain{
+    transform: translate(200px,-140px);
+}
+.cd-popup-closeimg-replace img{
+    height: 25px;
+    width: 25px;
+    transform: translate(280px,-260px);
+
+
+}
 .pop-background {
     position: fixed;
     top: 0px;
@@ -330,11 +365,11 @@
 .pop-background.visible {
     opacity: 1;
 }
-/*This should be your pop-up container, this needs to have higher z-index in order to be obove background*/
+/*This should be your pop-up container, this needs to have higher z-index in order to be obove background
 
 .cd-popup1 {
   z-index: 9999;
-}
+}*/
 
 .button3{
     border: 2px solid black;
@@ -344,7 +379,7 @@
     cursor: pointer;
     border-color: black;
     align-items: center;
-    transform: translate(40%,70px);
+    transform: translate(40%,35px);
     
 
 }
@@ -357,4 +392,133 @@
     box-shadow: 5px 5px 5px gray;
     
 
+}
+
+/*Contact Part */
+
+.container1 {
+    background: linear-gradient(to right, #8f91ab80 50%, #ffffff 50%), url(/img/background.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+}
+
+.user img {
+    width: 150px;
+    height: 150px;
+}
+
+.user {
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -100%);
+    left: 50%;
+}
+
+.input-field {
+    margin: 20px 0px;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #b39d9d;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+form {
+    margin: 90px 50px;
+    width: 100%;
+}
+
+.form_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.contact_button {
+    background: rgb(31, 29, 29);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact_button:hover{
+    box-shadow: 5px,5px,5px gray;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+span {
+    background: #fbfbfb;
+    box-shadow: 0 2px 5px #00000052;
+    padding: 5px;
+    line-height: 2;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.dialog {
+    transition: 0.2s all;
+    color: red;
+}
+
+@media(max-width: 768px) {
+    .left {
+        display: none;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .container1 {
+        width: 90%;
+        height: 60vh;
+        background: white;
+    }
+
+    .right {
+        width: 100%;
+        margin-top: 50px;
+    }
 }
