@@ -1,7 +1,7 @@
 Overall Look and Feel of CyberLimbDynamics
 ===============================
 
-We aimed to decorate our website in a futuristic and modern style. We wish to impart a futuristic feel for the user while also trying to maintain simplicity of our website. 
+We aimed to decorate our website in a futuristic and modern style. We strive to give out a futuristic feel for our valued patients and have a simple look for our website. 
 
 Colours
 ========
@@ -15,7 +15,8 @@ For CLD, our chosen colours help depict our futuristic and innovative feel Hence
 
 Iconography
 ===========
-We will select icons and images that depict our prosthetics and how our customers benefit from them. Our images will help enhance our innovative feeling. We will only implement icons that will intensify our site. 
+We will select icons and images that depict our prosthetics and how our customers benefit from them. Our images will help enhance our innovative feeling.
+We will only implement icons that will intensify our site. 
  
 
 Typography
@@ -24,7 +25,7 @@ We will be using Rambla, Quicksand, and sans serif version from Google Fonts.
 
 Links
 =====
-Links will not be underlined and should change color when a user hovers over it.
+Our links in the header will display a opaque white box around tab when the user hiveres upon it. We will have some links attached to our buttons as well. 
 
 Buttons
 =======
