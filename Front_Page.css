@@ -1,6 +1,6 @@
 /*Header CSS*/
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     padding-top: 12.5px;
     list-style: none;
@@ -9,16 +9,16 @@
 
 }
 
-.header{
+.header {
     width: 100%;
     height: 160px;
     display: block;
-    background-color:#1f1d1d;
+    background-color: #1f1d1d;
     line-height: 1;
     font-family: 'Rambla';
 }
 
-.inner_header{
+.inner_header {
 
     width: 1000px;
     height: 50%;
@@ -34,29 +34,31 @@
     font-family: 'Rambla';
 }
 
-.logo_container{
+.logo_container {
     height: 100%;
     display: table-cell;
     vertical-align: middle;
-    transform: translate(-50px,0px);  /*# can specify font size of each word*/
+    transform: translate(-50px, 0px);
+    /*# can specify font size of each word*/
     font-family: 'Rambla';
 }
 
-.navigation{
+.navigation {
     float: right;
     height: 100%;
     font-family: 'Rambla';
 }
 
-.navigation a{
-    height: 100%; /*to acess a tag in navigation, same for all type like logo.container*/
+.navigation a {
+    height: 100%;
+    /*to acess a tag in navigation, same for all type like logo.container*/
     display: table;
     float: left;
-    padding:0px 20px;
+    padding: 0px 20px;
     font-family: 'Rambla';
 }
 
-.navigation a li{
+.navigation a li {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -64,7 +66,7 @@
     color: white;
     font-family: 'Arial';
     font-size: 16px;
-    transform: translate(-350px,0px);
+    transform: translate(-350px, 0px);
     font-family: 'Rambla';
 }
 
@@ -85,14 +87,12 @@ body {
     justify-content: space-between;
     padding: 20px;
     background-color: #222;
-    font-family: 'Rambla';
 }
 
 h1 {
     text-align: center;
     font-size: 3em;
     margin-top: 150px;
-    font-family: 'Rambla';
 }
 
 .full-screen-image {
@@ -102,14 +102,12 @@ h1 {
     height: 125vh;
     overflow: hidden;
     margin-top: 30px;
-    font-family: 'Rambla';
 }
 
 .full-screen-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    font-family: 'Rambla';
 }
 
 .image-text {
@@ -119,7 +117,6 @@ h1 {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-family: 'Rambla';
 }
 
 
@@ -133,7 +130,6 @@ h1 {
     text-align: center;
     width: 250px;
     font-weight: bold;
-    font-family: 'Rambla';
 }
 
 
@@ -150,92 +146,61 @@ h1 {
     text-align: center;
     width: 250px;
     font-weight: bold;
-    font-family: 'Rambla';
 }
 
 .text h2 {
     font-size: 2em;
-    font-family: 'Rambla';
 }
 
 .text p {
     font-size: 1.1 em;
     line-height: 1.6;
-    font-family: 'Rambla';
 }
 
 .image img {
     max-width: 50%;
     max-height: 50vh;
     object-fit: cover;
-    font-family: 'Rambla';
 }
-
-.left {
-    float: left;
-}
-
-.Style1 {
-    position: relative;
-    object-fit: cover;
-    font-family: 'Rambla';
-}
-
-
-.text {
-    position: absolute;
-    left: 15px;
-    top: 65px;
-    font-size: medium;
-    color: white;
-    font-family: 'Rambla';
-}
-
-.text_black {
-    position: absolute;
-    left: 10px;
-    right: 15px;
-    color: black;
-    font-family: 'Rambla';
-}
-
-
-.text2 {
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    right: 20px;
-    left: 20px;
-    text-align: center;
-    color: black;
-    font-family: 'Rambla';
-}
-
-.bottom-left {
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-}
-
-.top-left{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: black;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-
 
 #Picture1 {
     width: 100%;
     height: 600px;
     text-align: left;
-    font-family: 'Rambla';
 }
 
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image {
+    flex: 0 0 50%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text {
+    flex: 1;
+    padding: 0 20%;
+    text-align: left;
+}
+
+.image-with-text:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.image-with-text:nth-child(even) .text {
+    text-align: left;
+}
