@@ -57,10 +57,17 @@
 }
 
 div.gallery {
-    margin: 5px;
+    /* margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 180px;
+    width: 180px; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px; /* Adjust the width as needed */
+    margin: 0 auto;
+    
 
 }
 
