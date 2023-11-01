@@ -204,3 +204,7 @@ h1 {
 .image-with-text:nth-child(even) .text {
     text-align: left;
 }
+
+#Picture3 {
+    width: 113.5%;
+}
