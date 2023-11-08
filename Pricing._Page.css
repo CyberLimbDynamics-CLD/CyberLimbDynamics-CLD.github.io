@@ -471,10 +471,10 @@ a {
 
 .pricing-header h2 {
 	padding: 0.9em 0.9em 0.6em;
-    font-weight: 400;
-    margin-bottom: 30px;
-    margin-top: 10px;
-    text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  text-transform: uppercase;
 	text-align: center;
 }
 
@@ -483,7 +483,7 @@ a {
     padding: 1.9em 0 1.6em;
     pointer-events: auto;
     text-align: center;
-    color: #173d50;
+    color: #000000;
     background-color: transparent;
 }
 
@@ -651,7 +651,7 @@ a {
     padding: 1.3em 2em;
     color: #000000;
     border-radius: 8px;
-    border: 2px solid #1bbc9d;
+    border: 2px solid #6ab6d1;
     font-size: 1.4rem;
     text-indent: 0;
     text-transform: uppercase;
