@@ -1,3 +1,40 @@
+/*Adding media queries to make webiste more responsivness for certain pixels*/
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+    }
+
+
+@keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+    
+/* Internet Explorer */
+@-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+
 /*Header CSS*/
 *{
     margin:0;
@@ -277,8 +314,33 @@
 
 }
 
-/* Wasn't able to get the greyed out background for at the momment. 
-    I have commented it out for now because it is not ready, but still left it to show what I was trying to do. 
+
+.button3{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-color: black;
+    align-items: center;
+    transform: translate(40%,35px);
+    
+
+}
+
+.button3 h3{
+    font-size: 16px;
+}
+
+.button3:hover{
+    box-shadow: 5px 5px 5px gray;
+    
+
+}
+
+/*Wasn't able to get the greyed out background for at the momment. 
+    I have commented it out for now because it is not ready, but still left it to show what I was trying to do.*/
+
 .popup{
     display: none;
     position: fixed;
@@ -292,7 +354,7 @@
     background: #FFF;
     border: 3px solid #F04A49;
     z-index: 20;
-    transform: translate(300px,300px);
+    transform: translate(300px,100px);
 }
 
 #popup:after{
@@ -302,8 +364,9 @@
     left: 0;
     bottom:0;
     right: 0;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     z-index: -2;
+    
   }
   
 #popup:before {
@@ -315,7 +378,10 @@
     right: 0;
     background: #FFF;
     z-index: -1;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
   }
+  
 .square_bullet1{
     list-style-type: square;
     transform: translate(20px,30px);
@@ -355,7 +421,7 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    background-color: #fff; //whatever you want
+    background-color: #fff; 
     opacity: 0;
     transition: all 0.5 linear;
     -webkit-transition: same!;
@@ -365,34 +431,15 @@
 .pop-background.visible {
     opacity: 1;
 }
+
+
+
 /*This should be your pop-up container, this needs to have higher z-index in order to be obove background
 
 .cd-popup1 {
   z-index: 9999;
-}*/
-
-.button3{
-    border: 2px solid black;
-    background-color: white;
-    color: black;
-    padding: 14px 28px;
-    cursor: pointer;
-    border-color: black;
-    align-items: center;
-    transform: translate(40%,35px);
-    
-
 }
 
-.button3 h3{
-    font-size: 16px;
-}
-
-.button3:hover{
-    box-shadow: 5px 5px 5px gray;
-    
-
-}
 
 /*Contact Part */
 
@@ -498,27 +545,5 @@ span {
     color: red;
 }
 
-@media(max-width: 768px) {
-    .left {
-        display: none;
-    }
 
-    .form-wrapper {
-        width: 100%;
-    }
 
-    form {
-        width: 80%;
-    }
-
-    .container1 {
-        width: 90%;
-        height: 60vh;
-        background: white;
-    }
-
-    .right {
-        width: 100%;
-        margin-top: 50px;
-    }
-}

@@ -18,6 +18,10 @@ else if(!$('.cd-popup').hasClass('is-visible')) {
 	$('.popup-background').removeClass('visible');
 }
 
+function toggle(){
+    var blur= document.getElementById('popup');
+    blur.classList.toggle('active')
+}
 
 function chBackcolor(clor) {
 	document.body.style.background = grey;
