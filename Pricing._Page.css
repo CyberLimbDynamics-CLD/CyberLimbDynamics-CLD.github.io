@@ -823,7 +823,7 @@ a {
     -o-transform: perspective(2000px) rotateY(-200deg);
     transform: perspective(2000px) rotateY(-200deg);
   }
-  100% {
+  100% {    
     -webkit-transform: perspective(2000px) rotateY(-180deg);
     -moz-transform: perspective(2000px) rotateY(-180deg);
     -ms-transform: perspective(2000px) rotateY(-180deg);
