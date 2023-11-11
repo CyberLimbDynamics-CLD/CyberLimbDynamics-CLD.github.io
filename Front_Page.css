@@ -135,8 +135,8 @@ h1 {
 
 .rounded-box {
     position: absolute;
-    bottom: 45%;
-    left: 40%;
+    bottom: 10%;
+    right: 1.65%;
     background-color: #555753;
     border: 1px solid #555753;
     color: black;
@@ -144,8 +144,9 @@ h1 {
     padding: 10px 20px;
     text-decoration: underline;
     text-align: center;
-    width: 250px;
+    width: 400px;
     font-weight: bold;
+    font-size: 30px;
 }
 
 .text h2 {
@@ -207,4 +208,108 @@ h1 {
 
 #Picture3 {
     width: 113.5%;
+}
+
+/*Contact Part */
+
+.container1 {
+    background: linear-gradient(to right, #8f91ab80 50%, #ffffff 50%), url(/img/background.jpg);
+    width: 100%;
+    height: 500px;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+}
+
+.user img {
+    width: 150px;
+    height: 150px;
+}
+
+.user {
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background: #ffffff;
+    transform: translate(-50%, -100%);
+    left: 50%;
+}
+
+.input-field {
+    margin: 20px 0px;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #b39d9d;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+form {
+    margin: 90px 50px;
+    width: 100%;
+}
+
+.form_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.contact_button {
+    background: rgb(31, 29, 29);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact_button:hover{
+    box-shadow: 5px,5px,5px gray;
+}
+
+.left,
+.right {
+    width: 50%;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+span {
+    background: #fbfbfb;
+    box-shadow: 0 2px 5px #00000052;
+    padding: 5px;
+    line-height: 2;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.dialog {
+    transition: 0.2s all;
+    color: red;
 }
