@@ -28,7 +28,7 @@ jQuery(document).ready(function($){
 	function bouncy_filter(container) {
 		container.each(function(){
 			var pricing_table = $(this);
-			var filter_list_container = pricing_table.children('.pricing-switch'),
+			var filter_list_container = pricing_table.children('.pricing-switcher'),
 				filter_radios = filter_list_container.find('input[type="radio"]'),
 				pricing_table_wrapper = pricing_table.find('.pricing-wrapper');
 

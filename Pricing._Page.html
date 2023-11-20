@@ -1,187 +1,193 @@
 <!DOCTYPE html>
-<html> 
+<html>
     <head>
         <link rel="stylesheet" type="text/css" href="Pricing._Page.css">
-		<link href="https://fonts.googleapis.com/css?family=Rambla:i" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap" rel="stylesheet">
-		<script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js”></script>
-		<script type="text/javascript" src="Pricing.Page.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Rambla:i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="Pricing.Page.js"></script>
+
 
     </head>
-    <body> 
-		
-		<div class="header">
-			<div class="inner_header">
-				<div class="logo_container">
-					<a href="Front_Page.html"> <img src="./Images/image 32.png" height="85" width="100" ></a>
-				</div>
-				<ul class="navigation">
-					<a href="About._Page.html"><li>ABOUT</li></a> 
-					<a href="Feature.Page.html"><li>FEATURES</li></a> <!-- FIX LINK-->
-					<a href="Pricing._Page.html"><li>PRICING</li></a> 
-					<a href="Team._Page.html"><li>TEAM</li></a>
-						
-				</ul>
-			</div>
-        
-    <div class="pricing-container"> 
-        <div class="pricing-switch"> 
-            <p class = "fieldset"
-                <input type = "radio" name = "billing-duration" value = "monthly" id="monthly1" checked> <!--checked meaning option chosen by default-->
-                <label for="monthly1" >Monthly </label>
-                <input type="radio" name = "billing-duration" value = "yearly" id = "yearly1" >
-                <label for="yearly1" > Yearly </label>
-                <span class = "switch" ></span> <!--# represents the switch between monthly and yearly-->
-            </p>
-        </div>
-        <ul class="pricing-list bounce-invert">
-			<li>
-				<ul class="pricing-wrapper">
-					<li data-type="monthly" class="is-visible">
-						<header class="pricing-header">
-							<h2>Standard</h2>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value"></span>
-								<span class="duration">mo</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li> Standard scanner model </li>
-								<li> Entry-level prosthetic design capabilities </li>
-								<li> Basic technical support </li>  
-								<li> On-site training for staff </li>
-			
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-					<li data-type="yearly" class="is-hidden">
-						<header class="pricing-header">
-							<h2>Basic</h2>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value">320</span>
-								<span class="duration">yr</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li> Standard scanner model </li>
-								<li> Entry-level prosthetic design capabilities </li>
-								<li> Basic technical support </li>  
-								<li> On-site training for staff </li>
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-				</ul>
-			</li>
-			<li class="exclusive">
-				<ul class="pricing-wrapper">
-					<li data-type="monthly" class="is-visible">
-						<header class="pricing-header">
-							<h2>Advanced</h2>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value">60</span>
-								<span class="duration">mo</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li> High-precision, high-speed advanced scanner model </li>
-								<li> Enhanced prosthetic design capabilities </li>
-								<li> Priority technical support </li>
-								<li> On-site training </li>
-								
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-					<li data-type="yearly" class="is-hidden">
-						<header class="pricing-header">
-							<h2>Advanced</h2>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value"></span>
-								<span class="duration">yr</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li> High-precision, high-speed advanced scanner model </li>
-								<li> Enhanced prosthetic design capabilities </li>
-								<li> Priority technical support <em>.</em> ...</li>
-								<li> On-site training </li>
-					
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<ul class="pricing-wrapper">
-					<li data-type="monthly" class="is-visible">
-						<header class="pricing-header">
-							<h2>Pro</h2>
-							<div class="price">
-								<span class="currency"> Custom pricing </span>
-								<span class="value"></span>
-								<span class="duration"></span>
-								
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li> Custom hospital scanner model </li>
-								<li> Hospital-tailored prosthetic design  </li>
-								<li> 24/7 technical support </li>
-								<li> On-site training with advanced workshops</li>
-                                <li>  </li>
+<body>
+       
+    <div class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <a href="Front_Page.html"> <img src="./Images/image 32.png" height="85" width="100" ></a>
+            </div>
+                <ul class="navigation">
+                    <a href="About._Page.html"><li>ABOUT</li></a>
+                    <a href="Feature.Page.html"><li>FEATURES</li></a> <!-- FIX LINK-->
+                    <a href="Pricing._Page.html"><li>PRICING</li></a>
+                    <a href="Team._Page.html"><li>TEAM</li></a>
+                       
+                </ul>
+            </div>
 
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-					<li data-type="yearly" class="is-hidden">
-						<header class="pricing-header">
-							<h2>Pro</h2>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="value">950</span>
-								<span class="duration">yr</span>
-							</div>
-						</header>
-						<div class="pricing-body">
-							<ul class="pricing-features">
-								<li> Custom hospital scanner model </li>
-								<li> Hospital-tailored prosthetic design  </li>
-								<li> 24/7 technical support </li>
-								<li> On-site training with advanced workshops</li>
-							</ul>
-						</div>
-						<footer class="pricing-footer">
-							<a class="select" href="#">Sign Up</a>
-						</footer>
-					</li>
-				</ul>
-			</li>
-		</ul>
-    </div>
 
-    </body>
-</html>
+<div class="pricing-container">
+	<div class="pricing-switcher">
+		<p class="fieldset">
+			<input type="radio" name="duration-1" value="monthly" id="monthly-1" checked>
+			<label for="monthly-1">Monthly</label>
+			<input type="radio" name="duration-1" value="yearly" id="yearly-1">
+			<label for="yearly-1">Yearly</label>
+			<span class="switch"></span>
+		</p>
+	</div>
+	<ul class="pricing-list bounce-invert">
+		<li>
+			<ul class="pricing-wrapper">
+				<li data-type="monthly" class="is-visible">
+					<header class="pricing-header">
+						<h2>Standard</h2>
+						<div class="price">
+							<span class="currency">$</span>
+							<span class="value">30</span>
+							<span class="duration">mo</span>
+						</div>
+					</header>
+					<div class="pricing-body">
+						<ul class="pricing-features">
+							<li><em>Standard scanner model</em> </li>
+							<li><em>Entry-level prosthetic design capabilites</em></li>
+							<li><em>Basic technical support</em> </li>
+							<li><em>1</em>On-site training for staff</li>
+							<li><em></em> </li>
+							<li><em></em></li>
+						</ul>
+					</div>
+					<footer class="pricing-footer">
+						<a class="select" href="#">Sign Up</a>
+					</footer>
+				</li>
+				<li data-type="yearly" class="is-hidden">
+					<header class="pricing-header">
+						<h2>Basic</h2>
+						<div class="price">
+							<span class="currency">$</span>
+							<span class="value">320</span>
+							<span class="duration">yr</span>
+						</div>
+					</header>
+					<div class="pricing-body">
+						<ul class="pricing-features">
+							<li><em>Standard scanner model</em> </li>
+							<li><em>Entry-level prosthetic design capabilites</em></li>
+							<li><em>Basic technical support</em> </li>
+							<li><em>On-site training for staff</em></li>
+							<li><em></em> </li>
+							<li><em></em></li>
+						</ul>
+					</div>
+					<footer class="pricing-footer">
+						<a class="select" href="#">Sign Up</a>
+					</footer>
+				</li>
+			</ul>
+		</li>
+		<li class="exclusive">
+			<ul class="pricing-wrapper">
+				<li data-type="monthly" class="is-visible">
+					<header class="pricing-header">
+						<h2>ADVANCED</h2>
+						<div class="price">
+							<span class="currency">$</span>
+							<span class="value">60</span>
+							<span class="duration">mo</span>
+						</div>
+					</header>
+					<div class="pricing-body">
+						<ul class="pricing-features">
+							<li><em>High-precision, high-speed advanced scanner</em></li>
+							<li><em>Enhanced prosthetic design capabilites</em></li>
+							<li><em>Priority technical support</em></li>
+							<li><em>Onsite training & workshops</em></li>
+							<li><em></em> </li>
+							<li><em></em></li>
+						</ul>
+					</div>
+					<footer class="pricing-footer">
+						<a class="select" href="#">Sign Up</a>
+					</footer>
+				</li>
+				<li data-type="yearly" class="is-hidden">
+					<header class="pricing-header">
+						<h2>Exclusive</h2>
+						<div class="price">
+							<span class="currency">$</span>
+							<span class="value">630</span>
+							<span class="duration">yr</span>
+						</div>
+					</header>
+					<div class="pricing-body">
+						<ul class="pricing-features">
+							<li><em>High-precision, high-speed advanced scanner</em></li>
+							<li><em>Enhanced prosthetic design capabilites</em></li>
+							<li><em>Priority technical support</em></li>
+							<li><em>Onsite training & workshops</em></li>
+							<li><em></em> </li>
+							<li><em></em></li>
+						</ul>
+					</div>
+					<footer class="pricing-footer">
+						<a class="select" href="#">Sign Up</a>
+					</footer>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<ul class="pricing-wrapper">
+				<li data-type="monthly" class="is-visible">
+					<header class="pricing-header">
+						<h2>Pro</h2>
+						<div class="price">
+							<span class="currency">$</span>
+							<span class="value">90</span>
+							<span class="duration">mo</span>
+						</div>
+					</header>
+					<div class="pricing-body">
+						<ul class="pricing-features">
+							<li><em>Custom hospital scanner model</em></li>
+							<li><em>Hospital-tailored prosthetic desig</em> </li>
+							<li><em>24/7 technical support</em> </li>
+							<li><em>Onsite training & workshops</em> </li>
+							<li><em></em> </li>
+							<li><em></em></li>
+						</ul>
+					</div>
+					<footer class="pricing-footer">
+						<a class="select" href="#">Sign Up</a>
+					</footer>
+				</li>
+				<li data-type="yearly" class="is-hidden">
+					<header class="pricing-header">
+						<h2>Pro</h2>
+						<div class="price">
+							<span class="currency">$</span>
+							<span class="value">950</span>
+							<span class="duration">yr</span>
+						</div>
+					</header>
+					<div class="pricing-body">
+						<ul class="pricing-features">
+							<li><em>Custom hospital scanner model</em></li>
+							<li><em>Hospital-tailored prosthetic desig</em> </li>
+							<li><em>24/7 technical support</em> </li>
+							<li><em>Onsite training & workshops</em> </li>
+							<li><em></em> </li>
+							<li><em></em></li>
+						</ul>
+					</div>
+					<footer class="pricing-footer">
+						<a class="select" href="#">Sign Up</a>
+					</footer>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
