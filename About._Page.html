@@ -2,10 +2,14 @@
     <head>
         <title>About  CyberLimbDynamics-CLD </title>
         <meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rambla:i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,900&display=swap" rel="stylesheet">
     </head>
     <Style>
        body { 
-	font: 75% rambla, sans-serif;
+	font: 75% Quicksand, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
     
@@ -17,34 +21,16 @@
         font-size: 2em;
         
     }
+    h2{
+        text-align: center;
+    }
     p{
         font-size: 20px;
     }
     
-    #perfection{
-        margin-left: 42.5%;
-	color: #555753; 
-    }
-    #connect{
-        
-        margin-left: 39.5%;
-	color: #555753; 
-    }
     ul{
         list-style-type: none;
         font-size: 20px;
-    }
-    #empower{
-        margin-left: 41%;
-	color: #555753; 
-    }
-    #precise{
-        margin-left: 43%;
-	color: #555753; 
-    }
-    #evolve{
-        margin-left: 43%;
-	color: #555753; 
     }
     #Unveiling{
         margin-top:100px;
@@ -59,19 +45,6 @@
 	text-align: center;
     margin-top: 50px;
     font-family:  Quicksand, sans-serif;
-    }
-    #bar{
-    position:absolute;
-    top: 0px;
-    left:0px;
-    width: 100%;
-    height: 8%;
-    }
-    #logo{
-        position: absolute;
-        left: 20%;
-        top:4px;
-        height: 7%;
     }
     
     #plans{
@@ -105,9 +78,10 @@
         background-color: rgb(230,230,230);
         width: 70%;
         margin-left: 10%;
-        padding: 50px;
-        
-        
+        padding-right: 75px;
+        padding-left: 75px;
+        padding-bottom: 75px;
+        padding-top: 40px;
     }
     #The-beauty-of-cld{
         margin-left:100px;
@@ -116,6 +90,15 @@
         text-align: center;
         margin-bottom: 50px;
     }
+   #centralising{
+        background-color: white;
+        width: 70%;
+        margin-left: 10%;
+        padding-right: 75px;
+        padding-left: 50px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
     #seperate-unveiling{
         background-color: rgb(242, 243, 245,0.5);
         width: 30%;
@@ -123,8 +106,8 @@
         margin-right: 30%;
         padding-left: 200px;
         padding-right: 300px;
-        padding-top: 10px;
-        padding-bottom: 5%;
+        padding-top: 50px;
+        padding-bottom: 2%;
         margin-top: 5%;
        
 
@@ -138,7 +121,7 @@
         margin-right: 30%;
         padding-left: 200px;
         padding-right: 300px;
-        padding-top: 10px;
+        padding-top: 80px;
         padding-bottom: 5%;
         margin-top: 15%;
 
@@ -151,7 +134,7 @@
         margin-right: 30%;
         padding-left: 200px;
         padding-right: 300px;
-        padding-top: 10px;
+        padding-top: 80px;
         padding-bottom: 5%;
         margin-top: 15%;
 
@@ -163,8 +146,8 @@
         margin-right: 30%;
         padding-left: 200px;
         padding-right: 300px;
-        padding-top: 10px;
-        padding-bottom: 5%;
+        padding-top: 50px;
+        padding-bottom: 2%;
         margin-top: 15%;
     }
     #seperate-Evolving{
@@ -174,8 +157,8 @@
         margin-right: 30%;
         padding-left: 200px;
         padding-right: 300px;
-        padding-top: 10px;
-        padding-bottom: 5%;
+        padding-top: 50px;
+        padding-bottom: 3%;
         margin-top: 15%;
     }
     
@@ -314,24 +297,114 @@
     font-family: Rambla, sans-serif;
     font-size: 15px;
     color: white;
-	text-decoration: none;
+	text-decoration: none;}
 	
+
+
+#perfection{
+    text-align: center;
+}
+.header{
+        width: 100%;
+        height: 85px;
+        display: block;
+        background-color:#1f1d1d;
+        line-height: 1;
+}
+
+.inner_header{
+
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.logo_container {
+    height: 100%;
+    display: table;
+    float: left;
+    
+}
+
+.logo_container{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    transform: translate(-50px,0px);  /*# can specify font size of each word*/
+}
+    
+.navigation{
+    float: right;
+    height: 100%;
+}
+
+.navigation a{
+    height: 100%; /*to acess a tag in navigation, same for all type like logo.container*/
+    display: table;
+    float: left;
+    padding:0px 20px;
+
+}
+
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    color: white;
+    font-family: Rambla, sans-serif;
+    font-size: 16px;
+    transform: translate(-350px,0px);
+}
+
+#CH{
+   margin-top: 0px;
+   margin-bottom: 25px;
+   text-align: center;
+}
+#UP{
+    text-align: center;
+    margin-top: 0px;
+   margin-bottom: 25px;
+}
+#EP{
+    text-align: center;
+   margin-top: 0px;
+   margin-bottom: 25px;
+}
+#PR{
+    text-align: center;
+   margin-top: 0px;
+   margin-bottom: 25px;
+}
+#EF{
+    text-align: center;
+   margin-top: 0px;
+   margin-bottom: 25px;
 }
     </Style>
 	    
     <body>
         
-        <img id="bar" src="About_Page_Images/Rectangle F.png">
-        <a href="Front._Page.html"> <img id="logo" src="About_Page_Images/image 32.png"> </a> 
-         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn" ><hr id="hr1"><hr id="hr2"></button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="Front._Page.html">Welcome to CLD-CyberLimbDyamics</a>
-              <a href="Feature.Page.html">Our Features</a>
-              <a href="Pricing._Page.html">Our Plans and Pricing</a>
-              <a href="About._Page.html">About CLD-CyberLimbDyamics</a>
-              <a href="Team._Page.html">Meet the Team</a>
+        <div class="header">
+            <div class="inner_header">
+                <div class="logo_container">
+                    <!-- #where I will put logo -->
+                    <!--<h1>CLD</h1>-->
+                    <a href="Front_PageVersion2.html"> <img src="./Images/image 32.png" height="85" width="100" ></a>
+                    <!-- # used to style MY and SITE -->
+                </div>
+                <ul class="navigation">
+                    <a href="About._Page.html"><li>ABOUT</li></a> 
+                    <a href="Feature.Page.html"><li>FEATURES</li></a> <!-- FIX LINK-->
+                    <a href="Pricing._Page.html"><li>PRICING</li></a> 
+                    <a href="Team._Page.html"><li>TEAM</li></a>
+                        
+                </ul>
             </div>
+    
         <h1>CyberLimbDynamics</h1>
         <div id="The-beauty-of-cld">
         <h2 class="CLD">The Beauty of CLD</h2>
@@ -348,14 +421,17 @@
          This model isn't just a generic replacement; it's a personalized, artful creation that mirrors every feature of the patient or client's own body, right down to the minutest details. 
          Our revolutionary manufacturing process takes this model and brings it to life, delivering a prosthetic that is not just functional, but a seamless part of who you are!</p>
 	</div>
-        <h2 class="CLD">Why Choose Us</h2>
+    
+        <h2 class="CLD">Why Choose Us?</h2>
+        <div id="centralising">
         <ul>
-            <li  id="perfection"><a class="center" href="#Unveiling">Unveiling Prefection</a></li>
-            <li  id="connect"><a class="center" href="#Connecting">Connecting Hearts and Minds</a></li>
-            <li  id="empower"><a class="center" href="#Empowering">Empowering possibilities</a></li>
-            <li  id="precise"><a class="center" href="#Meticulous">Precise Replication</a></li>
-            <li  id="evolve"><a class="center" href="#Evolving">Evolving the Future</a></li>
+            <li  id="perfection"><a class="center" href="#Unveiling"><h4 id="UP">Unveiling Prefection</h4></a></li>
+            <li  id="connect"><a class="center" href="#Connecting"><h4 id="CH">Connecting Hearts and Minds</h4></a></li>
+            <li  id="empower"><a class="center" href="#Empowering"><h4 id="EP">Empowering possibilities</h4></a></li>
+            <li  id="precise"><a class="center" href="#Meticulous"><h4 id="PR">precise Replication</h4></a></li>
+            <li  id="evolve"><a class="center" href="#Evolving"><h4 id="EF">Evolving the Future</h4></a></li>
         </ul>
+    </div>
         <div id="seperate-unveiling">
         <h3  id="Unveiling">Unveiling Perfection</h3>
         <p>At CyberLinkDynamics-CLD, we have perfected the art of scanning body parts, unveiling the 
@@ -419,31 +495,6 @@
             </div>
         </div>
     </div>
-        <p id="plans"> <a class="header-links" href="Pricing._Page.html" >PRICING</a></p>
-        <p id="features"> <a class="header-links" href="Feature.Page.html">FEATURES</a></p>
-        <p id="team"> <a class="header-links" href="Team._Page.html">TEAM</a> </p>
-        <p id="about"><a class="header-links" href="#">ABOUT</a></p>
-
-	    <script>
-             /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-        </script>
+	    
     </body>
 </html>
