@@ -95,7 +95,7 @@
         width: 70%;
         margin-left: 10%;
         padding-right: 75px;
-        padding-left: 50px;
+        padding-left: 63px;
         padding-bottom: 0px;
         padding-top: 0px;
     }
@@ -375,28 +375,28 @@
 }
 #CH{
    margin-top: 0px;
-   margin-bottom: 25px;
+   margin-bottom: 0px;
    text-align: center;
 }
 #UP{
     text-align: center;
     margin-top: 0px;
-   margin-bottom: 25px;
+   margin-bottom: 0px;
 }
 #EP{
     text-align: center;
    margin-top: 0px;
-   margin-bottom: 25px;
+   margin-bottom: 0px;
 }
 #PR{
     text-align: center;
    margin-top: 0px;
-   margin-bottom: 25px;
+   margin-bottom: 0px;
 }
 #EF{
     text-align: center;
    margin-top: 0px;
-   margin-bottom: 25px;
+   margin-bottom: 0px;
 }
     </Style>
 	    
@@ -446,7 +446,7 @@
          Our revolutionary manufacturing process takes this model and brings it to life, delivering a prosthetic that is not just functional, but a seamless part of who you are!</p>
 	</div>
     
-        <h2 class="CLD">Why Choose Us?</h2>
+        <h2 class="CLD"><strong>Why Choose Us?</strong></h2>
         <div id="centralising">
         <ul>
             <li  id="perfection"><a class="center" href="#Unveiling"><h4 id="UP">Unveiling Prefection</h4></a></li>
@@ -519,6 +519,11 @@
             </div>
         </div>
     </div>
-	    
+	    <script>
+             window.addEventListener("scroll", function(){
+            var header= document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY >0 );
+        });
+        </script>
     </body>
 </html>
