@@ -9,8 +9,20 @@
     .header-right {
         float: none;
     }
-    }
+}
+/* Default styles for all screen sizes */
 
+@media screen and (min-width: 600px) {
+    /* Styles for screens larger than 600px */
+}
+
+@media screen and (min-width: 768px) {
+    /* Styles for screens larger than 768px */
+}
+
+@media screen and (min-width: 1024px) {
+    /* Styles for screens larger than 1024px */
+}
 
 @keyframes fadein {
         from { opacity: 0; }
@@ -83,7 +95,7 @@
     vertical-align: middle;
     transform: translate(-50px,0px);  /*# can specify font size of each word*/
 }
-    
+
 .navigation{
     float: right;
     height: 100%;
@@ -127,7 +139,7 @@
 }
 
 .Why_Our_Product h1{
-    font-family: "Montserrat";
+    font-family: Rambla, sans-serif;
     font-size: 20px;
     transform: translate(5px,50px);
     padding-top: 10px;
@@ -139,8 +151,8 @@
 
 }
 
-.Why_Our_Product p{
-    font-family: "Montserrat";
+.Why_Our_Product p1{
+    font-family: Rambla, sans-serif;
     font-size: 15px;
     transform: translate(5px,100px);
     padding-top: 0px;
@@ -153,6 +165,18 @@
 
 }
 
+.Why_Our_Product p2{
+    font-family: "Montserrat";
+    font-size: 15px;
+    transform: translate(5px,120px);
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-stretch: condensed;
+
+}
 
 .Acquire-Button{
     background-color: #808080;
@@ -340,99 +364,6 @@
 
 /*Wasn't able to get the greyed out background for at the momment. 
     I have commented it out for now because it is not ready, but still left it to show what I was trying to do.*/
-
-.popup{
-    display: none;
-    position: fixed;
-    padding: 10px;
-    width: 300px;
-    left: 50%;
-    margin-left: -150px;
-    height: 180px;
-    top: 50%;
-    margin-top: -100px;
-    background: #FFF;
-    border: 3px solid #F04A49;
-    z-index: 20;
-    transform: translate(300px,100px);
-}
-
-#popup:after{
-    position: fixed;
-    content: "";
-    top: 0;
-    left: 0;
-    bottom:0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: -2;
-    
-  }
-  
-#popup:before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: #FFF;
-    z-index: -1;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-  }
-  
-.square_bullet1{
-    list-style-type: square;
-    transform: translate(20px,30px);
-    
-}
-
-.Pref{
-    transform: translate(10px,30px);
-}
-
-.square_bullet2{
-    list-style-type: square;
-    transform: translate(120px,-56px);
-}
-
-.Eff{
-    transform: translate(120px,-56px);
-}
-
-.square_bullet3{
-    list-style-type: square;
-    transform: translate(210px,-142px);
-}
-.Pain{
-    transform: translate(200px,-140px);
-}
-.cd-popup-closeimg-replace img{
-    height: 25px;
-    width: 25px;
-    transform: translate(280px,-260px);
-
-
-}
-.pop-background {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: #fff; 
-    opacity: 0;
-    transition: all 0.5 linear;
-    -webkit-transition: same!;
-    -moz-transition: same!;
-    -o-transition: same!
-}
-.pop-background.visible {
-    opacity: 1;
-}
-
-
 
 /*This should be your pop-up container, this needs to have higher z-index in order to be obove background
 

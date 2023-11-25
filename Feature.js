@@ -60,7 +60,7 @@ form.addEventListener("submit", (e) => {
 //name validator
 function validateName(name) {
     console.log(name)
-    if (/^[a-zA-Z\-]+$/.test(name)) {
+    if (.test(name)) {
         error[0].style.display = "none";
     } else {
         error[0].style.display = "block";
@@ -70,7 +70,7 @@ function validateName(name) {
 
 //phone number validator
 function validatePhone(phone) {
-    if (/^\d{10}$/.test(phone)) {
+    if (.test(phone)) {
         error[1].style.display = "none";
     } else {
 
@@ -81,7 +81,7 @@ function validatePhone(phone) {
 
 //email  validator
 function validdateMail(mail) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+    if (.test(mail)) {
         error[2].style.display = "none";
     } else {
 

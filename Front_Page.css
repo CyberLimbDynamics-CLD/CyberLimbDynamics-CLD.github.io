@@ -152,12 +152,12 @@ h1 {
 
 .rounded-box {
     position: absolute;
-    bottom: 5%;
-    right: 1.65%;
+    bottom:5%;
+    right:1.65%;
     background-color: #555753;
     border: 1px solid #555753;
     color: black;
-    border-radius: 10px;
+    border-radius:10px;
     padding: 5px 5px 5px 5px;
     text-decoration: underline;
     text-align: center;
@@ -165,8 +165,17 @@ h1 {
     width: 300px;
     font-weight: bold;
     font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+    text-align: center;
+    /*transform: translate(0px,200px);*/
 }
 
+.rounded-box:hover {
+    background-color: white;
+    color: #18041e;
+    cursor: pointer;
+}
 .text h2 {
     font-size: 2em;
 }
@@ -253,7 +262,7 @@ h1 {
     margin: auto;
     position: absolute;
     top: 20%;
-    border: 0 solid #ffffff;
+    border: 0px solid #ffffff;
     border-radius: 50%;
     background: #ffffff;
     transform: translate(-50%, -100%);
