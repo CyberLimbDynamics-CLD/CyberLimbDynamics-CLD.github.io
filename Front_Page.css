@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    padding-top: 20px;
+    padding-top: 0px;
     list-style: none;
     text-decoration: none;
     font-family: 'Rambla';
@@ -12,7 +12,7 @@
 
 .header {
     width: 100%;
-    height: 150px;
+    height: 100px;
     display: block;
     background-color: #1f1d1d;
     line-height: 1;
@@ -29,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     width: 1000px;
-    height: 20%;
+    height: 40%;
     display: block;
     margin: auto;
     font-family: 'Rambla';
@@ -43,8 +43,12 @@
     align-items: center;
 }
 
+#Pages {
+    height: 10%;
+    margin-top: 4%;
+}
 .logo_container img {
-    height: 90%;
+    height: 0%;
     display: table-cell;
     vertical-align: middle;
     transform: translate(-50px, -10px);
@@ -241,7 +245,7 @@ h1 {
 .container1 {
     background: linear-gradient(to right, #8f91ab80 50%, #ffffff 50%), url(/img/background.jpg);
     width: 100%;
-    height: 600px;
+    height: 675px;
     border-radius: 2px;
     margin: auto;
     margin-top: 150px;
@@ -277,12 +281,12 @@ input {
     width: 100%;
     border: 0;
     outline: 0;
-    padding: 0.5rem 0;
+    padding: 1.5rem 0;
     border-bottom: 2px solid #d3d3d3;
     box-shadow: none;
     color: #b39d9d;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 
@@ -341,5 +345,10 @@ span {
 .dialog {
     transition: 0.2s all;
     color: red;
+}
+
+#Take_Our_Survey a {
+    color: black;
+    text-decoration: none ;
 }
 
