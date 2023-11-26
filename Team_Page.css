@@ -23,6 +23,7 @@ body{
     display: block;
     background-color: #1f1d1d;
     line-height: 1;
+    
 }
 
 .inner_header {
@@ -31,6 +32,7 @@ body{
     height: 100%;
     display: block;
     margin: 0 auto;
+    
 
 }
 
@@ -51,6 +53,7 @@ body{
     display: table;
     float: left;
     padding: 0px 20px;
+    /* position: fixed; */
 
 }
 
@@ -63,13 +66,10 @@ body{
     font-family: 'Rambla', sans-serif;
     font-size: 16px;
     transform: translate(-350px, 0px);
-
-
 }
 
 .team-section{
-    margin-top: 150px;
-
+    margin-top: 10px;
 }
 
 .team-title h1{
@@ -80,10 +80,13 @@ body{
 }
 
 .team-title p{
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     text-align:center;
     position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
 }
 
 .team-title2 h1{
