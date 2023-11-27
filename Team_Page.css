@@ -1,20 +1,12 @@
-*{
+* {
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-
-} */
-
-body{
-    background-color: rgb(41, 98, 27);
+body {
+    background-color: w;
 }
 
 .header {
@@ -23,7 +15,7 @@ body{
     display: block;
     background-color: #1f1d1d;
     line-height: 1;
-    
+
 }
 
 .inner_header {
@@ -32,7 +24,7 @@ body{
     height: 100%;
     display: block;
     margin: 0 auto;
-    
+
 
 }
 
@@ -40,14 +32,8 @@ body{
     height: 100%;
     display: table;
     float: left;
+    transform: translate(-50px, 0px);
 }
-
-.logo_container{
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    transform: translate(-50px,0px); 
-  }
 
 .navigation {
     float: right;
@@ -59,8 +45,6 @@ body{
     display: table;
     float: left;
     padding: 0px 20px;
-    /* position: fixed; */
-
 }
 
 .navigation a li {
@@ -74,46 +58,42 @@ body{
     transform: translate(-350px, 0px);
 }
 
-.team-section{
+.members-gallery {
     margin-top: 10px;
 }
 
-.team-title h1{
+.positions h1 {
     font-size: 50px;
     color: #fff;
-    text-align:center;
+    text-align: center;
     position: relative;
 }
 
-.team-title p{
+.positions p {
     font-size: 20px;
     color: #fff;
-    text-align:center;
+    text-align: center;
     position: relative;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
     margin-top: 10px;
 }
 
-.team-title2 h1{
+.positions h1 {
     font-size: 50px;
-    color: #000000;
     margin-top: 50px;
-    text-align:center;
-
+    text-align: center;
     position: relative;
 }
 
-
-
-.team-cards{
+.blocks{
     width: 85%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin: 30px auto;
 }
 
-.team-cards2{
+.blocks2 {
     width: 85%;
     display: flex;
     text-align: center;
@@ -121,251 +101,125 @@ body{
     margin: 30px auto;
 }
 
-.team-cards3{
+.blocks3 {
     width: 85%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin: 30px auto;
 }
 
-.team-card{
-    /* background-color: #060721; */
-    background-color: rgb(0,0,0);
-    border-radius: 25px;
-    margin: 0px 30px;
-    padding: 40px;
+.block {
+    background-color: rgb(0, 0, 0);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 10px;
     text-align: center;
-    transition: transform 0.2s ease;
     width: calc(50% - 30px);
 }
 
 
-.team-card:hover{
-    transform: scale(1.15); 
-    background-color:rgb(0, 70, 130);
+.block:hover {
+    transform: scale(1.08);
+    background-color: rgb(0, 70, 130);
 }
 
 
-.profile{
+.profile {
     background-color: rgb(255, 127, 80);
     padding: 15px;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     border: 0;
     cursor: pointer;
     width: 50%;
     margin: 20px auto 0;
     border-radius: 15px;
+    cursor: pointer;
+    position: relative;
 }
 
-.profile span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .profile span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .profile:hover span {
-    padding-right: 25px;
-  }
-  
-  .profile:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
 
-
-.team-image img{
+.team-image img {
     border-radius: 50%;
-    border: 6px solid rgb(250,250,250);
+    border: 6px solid rgb(250, 250, 250);
     height: 130px;
     width: 130px;
     object-fit: cover;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
-.team-detail h3{
-    color:#fff;
-    font-size: 30px;
+.text h3 {
+    color: #fff;
+    font-size: 35px;
     margin: 15px 0px;
 }
 
-.team-detail h4{
-    color:#fff;
-    font-size: 25px;
+.text h4 {
+    color: #fff;
+    font-size: 20px;
     margin: 15px 0px;
+    text-decoration: underline;
 }
-.team-detail p{
+
+.text p {
     color: #d3c7dd;
     font-size: 18px;
 }
 
-
-@media screen and (max-width: 768px){
-    .team-cards{
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .team-card{
-        width: 85%;
-        margin: 25px auto;
-    }
-
-}
-
-
-.container{
-    width: 100%;
-    height: 100vh;
-    background: #001660;
+.container {
     display: flex;
+    margin-right: 5px;
+    justify-content: space-between;
     align-items: center;
     justify-content: center;
 }
 
-form{
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
+form {
     border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
-form input, form textarea{
-    border: 0;
+form input {
+    border: 5px;
+    border-color: rgb(0, 0, 0);
     margin: 10px 0;
     padding: 20px;
-    outline: none;
-    background: #f5f5f5;
+    background: #ffffff;
     font-size: 16;
+    border-radius: 5px;
+    margin: 3px;
+    margin-top: 15px;
+
 }
 
-form button{
+form textarea {
+    border: 5px;
+    border-color: rgb(0, 0, 0);
+    margin: 30px 0;
+    padding: 20px;
+    width: 620px;
+    background: #ffffff;
+    font-size: 16;
+    border-radius: 5px;
+}
+
+
+form button {
     padding: 15px;
-    background: #ff5361;
+    background: rgb(0, 70, 130);
     color: #fff;
-    font-size: 18px;
+    font-size: 25px;
     border: 0;
-    outline: none;
     cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border-radius: 30px;
+    width: 620px;
+    margin-bottom: 20px;
+    border-radius: 15px;
 }
 
-/* FOOTER SETTINGS */
-
-.footer {
-    position: relative;
-    bottom: 10;
-    width:100%;
-    background-color: #003087;
-    padding: 100px 0;
-    
- }
-
- 
- .footer-col{
-    width: 25%;
-    padding: 0 50px;
- }
- 
- .footer-col h4{
-    font-size: 22px;
-    color: #ffffff;
-    margin-bottom: 35px;
-    font-weight: 500;
-    position: relative;
- }
- 
- .footer-col h4 ::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color:#ffffff;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
- }
- 
- .footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
- }
- 
- .footer-col ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    display: block;
-    transition: all 0.5s ease;
-    line-height: 20px;
-    text-transform: capitalize;
- }
- 
- .footer-col ul li a:hover{
-    padding-left: 8px;
- }
- 
- .footer-col .social-links a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255,255,255, 0.2);
-    margin-right: 10px;
-    margin: 0 10px 10px 0;
+.privacy {
+    font-size: 30px;
     text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
- }
- 
- .footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
- }
- 
- @media(max-width: 767px){
-    .footer-col{
-       width: 25%;
-       margin-bottom: 30px;
-    }
- }
- 
- @media(max-width: 574px){
-    .footer-col{
-       width: 100%;
-    }
- }
+    margin: 5px;
 
- .container {
-    position: relative;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: scroll;
- }
-
- 
-.row{
-    display: flex;
-    flex-wrap: wrap;
- }
-
-
+}
