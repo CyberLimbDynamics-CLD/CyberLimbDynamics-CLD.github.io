@@ -7,6 +7,7 @@
 
 body {
     background-color: w;
+    font-family: 'Rambla';
 }
 
 .header {
@@ -158,6 +159,7 @@ body {
     color: #fff;
     font-size: 35px;
     margin: 15px 0px;
+
 }
 
 .text h4 {
