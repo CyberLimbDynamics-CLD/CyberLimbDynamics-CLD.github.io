@@ -360,14 +360,6 @@
 
 }
 
-/*Wasn't able to get the greyed out background for at the momment. 
-    I have commented it out for now because it is not ready, but still left it to show what I was trying to do.*/
-
-/*This should be your pop-up container, this needs to have higher z-index in order to be obove background
-
-.cd-popup1 {
-  z-index: 9999;
-}
 
 
 /*Contact Part */
@@ -473,6 +465,5 @@ span {
     transition: 0.2s all;
     color: red;
 }
-
 
 
