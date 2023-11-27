@@ -10,18 +10,16 @@
         float: none;
     }
 }
-/* Default styles for all screen sizes */
+
 
 @media screen and (min-width: 600px) {
-    /* Styles for screens larger than 600px */
-}
+    
 
 @media screen and (min-width: 768px) {
-    /* Styles for screens larger than 768px */
 }
 
 @media screen and (min-width: 1024px) {
-    /* Styles for screens larger than 1024px */
+    
 }
 
 @keyframes fadein {
